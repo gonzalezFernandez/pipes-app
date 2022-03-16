@@ -1,0 +1,60 @@
+<h2>Uppercase & Lowercase</h2>
+<p>{{name | uppercase}}</p>
+<p>{{name2 | lowercase}}</p>
+
+<h2>Slice</h2>
+<p>{{name | slice:2}}</p>
+<p>{{name2 | slice:0:2}}</p>
+
+<h2>Number decimal</h2>
+<p>{{valorpi | number:'1.0-3'}}</p>
+
+<h2>Percent</h2>
+<p>{{myNum | percent}}}</p>
+<p>{{myNum | percent:'1.0-2'}}}</p>
+
+<h2>Currency</h2>
+<p>{{salary | currency}}</p>
+<p>{{salary | currency: 'currencyCharacter':'€'}}</p>
+<p>{{salary | currency: 'currencyCharacter':'£'}}</p>
+
+<h2>Json</h2>
+<p>{{personaje | json}}</p>
+<pre>{{personaje | json}}</pre>
+
+<h2>Async</h2>
+<pre>{{promiseValue | async}}</pre>
+
+<h2>Date</h2>
+<p>{{myDate}}</p>
+<p>{{myDate | date}}</p>
+<p>{{myDate | date:'EEEE, MMMM d, y'}}</p>
+<p>{{myDate | date:'M/d/y'}}</p>
+
+<h2>Array</h2>
+<ul *ngFor="let item of nombres">
+
+  <p>{{item | uppercase}}</p>
+
+</ul>
+
+<h1>Custom Pipe</h1>
+
+<table border="">
+  <thead >
+      <tr >
+          <th>Student ID</th>
+          <th>Name</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>{{trabajador1.id | uppercase}}</td>
+          <td>{{trabajador1.name | transformaNombre:trabajador1.gender}}</td>
+      </tr>
+      <tr>
+        <td>{{trabajador2.id | uppercase}}</td>
+        <td>{{trabajador2.name | transformaNombre:trabajador2.gender}}</td>
+    </tr>
+  </tbody>
+</table>
