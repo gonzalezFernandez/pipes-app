@@ -1,5 +1,7 @@
 # PipesApp
 
+![image](https://user-images.githubusercontent.com/100344855/158659694-80ff66c1-7c7f-4569-a479-2107ab2df133.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
 
 ## Development server
